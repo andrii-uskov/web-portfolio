@@ -9,10 +9,15 @@ function addTask() {
     const li = document.createElement("li");
     li.textContent = taskText;
 
+    li.onclick = function () {
+        li.classList.toggle("completed");
+    };
+
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete";
 
-    deleteButton.onclick = function () {
+    deleteButton.onclick = function (event) {
+        event.stopPropagation();
         li.remove();
     };
 
@@ -20,4 +25,4 @@ function addTask() {
     document.getElementById("taskList").appendChild(li);
 
     input.value = "";
-      }
+}
