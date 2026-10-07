@@ -68,3 +68,41 @@ input.addEventListener('keypress', function(e) {
 });
 
 init();
+// --- Логика фильтрации ---
+const filterAll = document.getElementById('filter-all');
+const filterActive = document.getElementById('filter-active');
+const filterCompleted = document.getElementById('filter-completed');
+
+function setFilter(filterType) {
+    // 1. Убираем класс active у всех кнопок
+    document.querySelectorAll('.filters button').forEach(btn => btn.classList.remove('active'));
+    
+    // 2. Добавляем класс active на нажатую кнопку
+    if (filterType === 'all') filterAll.classList.add('active');
+    if (filterType === 'active') filterActive.classList.add('active');
+    if (filterType === 'completed') filterCompleted.classList.add('active');
+
+    // 3. Показываем или скрываем задачи
+    const tasks = document.querySelectorAll('#taskList li');
+    tasks.forEach(task => {
+        const isCompleted = task.classList.contains('completed');
+        
+        if (filterType === 'all') {
+            task.style.display = 'flex'; // Показываем все
+        } else if (filterType === 'active' && !isCompleted) {
+            task.style.display = 'flex'; // Показываем только невыполненные
+        } else if (filterType === 'completed' && isCompleted) {
+            task.style.display = 'flex'; // Показываем только выполненные
+        } else {
+            task.style.display = 'none'; // Скрываем остальные
+        }
+    });
+}
+
+// Навешиваем события на кнопки фильтров
+filterAll.addEventListener('click', () => setFilter('all'));
+filterActive.addEventListener('click', () => setFilter('active'));
+filterCompleted.addEventListener('click', () => setFilter('completed'));
+
+// Применяем фильтр "Все" при загрузке, чтобы всё отобразилось корректно
+setFilter('all');
