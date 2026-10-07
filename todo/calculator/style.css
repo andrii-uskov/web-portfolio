@@ -1,1 +1,96 @@
+/* Общие стили для страницы */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
 
+/* Корпус калькулятора */
+.calculator {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 320px;
+}
+
+/* Экран */
+.display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 60px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/* Сетка для кнопок */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+    gap: 10px; /* Расстояние между кнопками */
+}
+
+/* Общий стиль для всех кнопок */
+.btn {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: #505050;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #707070;
+}
+
+/* Стили для цифр */
+.number {
+    background-color: #666;
+}
+
+/* Стили для операторов (+, -, *, /) */
+.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #ffad33;
+}
+
+/* Стили для кнопки "=" */
+.equals {
+    background-color: #007bff;
+    grid-row: span 2; /* Кнопка "=" займет 2 строки по высоте */
+}
+
+.equals:hover {
+    background-color: #0056b3;
+}
+
+/* Кнопка очистки (C) */
+.clear {
+    background-color: #dc3545;
+    grid-column: span 2; /* Кнопка "C" займет 2 колонки */
+}
+
+.clear:hover {
+    background-color: #c82333;
+}
+
+/* Кнопка "0" */
+.zero {
+    grid-column: span 2; /* Ноль займет 2 колонки */
+  }
