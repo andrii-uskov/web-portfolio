@@ -18,7 +18,17 @@ I am building practical projects to develop my programming skills and create a p
 
 ### Projects
 
-🚧 Projects are currently in development.
+### 🌤 Weather App
+Search the current weather by city name.
+- [Live demo](https://andrii-uskov.github.io/web-portfolio/weather/)
+- [Source code](./weather)
+- HTML, CSS, JavaScript, Open-Meteo API
+
+### ✅ To-Do List
+Task manager with saved tasks (localStorage).
+- [Live demo](https://andrii-uskov.github.io/web-portfolio/todo/)
+- [Source code](./todo)
+- HTML, CSS, JavaScript
 
 ### Career Goal
 
