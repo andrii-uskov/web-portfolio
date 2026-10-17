@@ -30,6 +30,13 @@ Task manager with saved tasks (localStorage).
 - [Source code](./todo)
 - HTML, CSS, JavaScript
 
+### 🎮 Tic-Tac-Toe
+Classic Tic-Tac-Toe game built with JavaScript.
+
+- https://andrii-uskov.github.io/web-portfolio/tic-tac-toe/
+- ./tic-tac-toe
+- HTML, CSS, JavaScript
+
 ## Career Goal
 
 Looking for a Praktikum or Junior position in Web Development / Python Development in Germany.
