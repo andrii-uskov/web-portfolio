@@ -8,7 +8,7 @@ I am currently learning web development and Python.
 
 I am building practical projects to develop my programming skills and create a professional portfolio.
 
-### Skills
+## Skills
 
 - HTML
 - CSS
@@ -16,7 +16,7 @@ I am building practical projects to develop my programming skills and create a p
 - Python
 - Git & GitHub
 
-### Projects
+## Projects
 
 ### 🌤 Weather App
 Search the current weather by city name.
@@ -30,10 +30,10 @@ Task manager with saved tasks (localStorage).
 - [Source code](./todo)
 - HTML, CSS, JavaScript
 
-### Career Goal
+## Career Goal
 
 Looking for a Praktikum or Junior position in Web Development / Python Development in Germany.
 
-### Contact
+## Contact
 
-LinkedIn: coming soon
+LinkedIn: [Andrii Uskov](https://www.linkedin.com/in/andrii-uskov-756193283)
