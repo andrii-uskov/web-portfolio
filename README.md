@@ -30,6 +30,12 @@ Task manager with saved tasks (localStorage).
 - [Source code](./todo)
 - HTML, CSS, JavaScript
 
+### 🧮 Calculator
+Calculator built with plain JavaScript.
+- [Live demo](https://andrii-uskov.github.io/web-portfolio/calculator/)
+- [Source code](./calculator)
+- HTML, CSS, JavaScript
+
 ### 🎮 Tic-Tac-Toe
 Classic Tic-Tac-Toe game built with JavaScript.
 
