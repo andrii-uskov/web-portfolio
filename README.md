@@ -39,6 +39,11 @@ Calculator built with plain JavaScript.
 ### 🎮 Tic-Tac-Toe
 Classic Tic-Tac-Toe game built with JavaScript.
 
+### 💰 Expense Tracker (Python)
+Console app to track expenses by category.
+- [Source code](./expense-tracker)
+- Python, CSV
+
 - https://andrii-uskov.github.io/web-portfolio/tic-tac-toe/
 - ./tic-tac-toe
 - HTML, CSS, JavaScript
